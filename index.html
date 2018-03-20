@@ -18,7 +18,7 @@
 </body>
 
 <script>
-  $.get('/functions/hello', function(data) {
+  $.get('/.netlify/functions/hello', function(data) {
     console.log(data);
     $('h2').text(data);
   });
