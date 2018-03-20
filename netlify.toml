@@ -1,4 +1,5 @@
-base    = "/"
-publish = "/"
-command = "echo 'nothing to do...' && date" 
-functions = "functions/" 
+[build]
+  base    = "/"
+  publish = "/"
+  command = "echo 'nothing to do...' && date" 
+  functions = "functions/" 
