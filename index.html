@@ -11,18 +11,16 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="mar-xl text-bold">Hello, world!</h1>
-  </div>
-  <div class="container">
-    <h2>...</h2>
+  <div class="container mar-xl">
+    <h1>Hello, world!</h1>
+    <p id="target">...</p>
   </div>
 </body>
 
 <script>
   $.get('/.netlify/functions/hello', function(data) {
     console.log(data);
-    $('h2').text(data);
+    $('#target').text(data);
   });
 </script>
 
